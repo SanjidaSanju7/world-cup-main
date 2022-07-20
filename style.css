@@ -165,6 +165,12 @@ blog section
     padding: 0 10px;
 }
 
+.button .hero-btn {
+    visibility: hidden;
+    text-align: center;
+    margin-left: 47px;
+}
+
 /*---------------
  footer section
  --------------- */
@@ -175,9 +181,9 @@ blog section
     height: auto;
     margin-top: -100px;
     background-color: #161616;
-    color: #FFFFFF;
-    left: 0px;
+    left: 0;
     top: 1512px;
+    color: #FFFFFF;
 
 
 }
@@ -233,4 +239,142 @@ hr {
 
 .socials a :hover {
     color: aqua;
+}
+
+
+/* -------------
+media queries
+-------------- */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+
+
+    .section-title {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .container {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .banner-info {
+
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .banner-img {
+        height: auto;
+    }
+
+
+    .btn-group {
+        margin: 24px 70px;
+    }
+
+
+
+    .blogs {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+        margin-block-start: 306px;
+        margin-inline-start: -245px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 375px;
+        height: 490px;
+        top: 3090px;
+        margin-left: 110px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 375px;
+        height: 490px;
+        top: 3090px;
+        margin-left: 110px;
+    }
+
+    .footer-content p {
+        display: block;
+        text-align: center;
+        padding: 0;
+
+    }
+
+
+}
+
+/*------------------ 
+Tablet-Devices
+------------------*/
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .section-title {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .btn-group {
+        background: white;
+        display: flex;
+        flex-direction: row;
+        margin: 24px 70px;
+        padding: 40px;
+
+    }
+
+
+    .blogs {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        flex-direction: column-reverse;
+        margin-block-start: 306px;
+        margin-inline-start: -145px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 290px;
+        top: 2090px;
+        margin-left: 170px;
+    }
+
+    .footer-content p {
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .button .hero-btn {
+        visibility: visible;
+        text-align: center;
+        margin-left: 87px;
+    }
 }
